@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -e
+
 REMOTE="SONY_RM_U304"
 
-. tools.sh
+. $(dirname $0)"/tools.sh"
 
 sendOnce KEY_CD
 sleep 1

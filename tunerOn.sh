@@ -4,4 +4,4 @@ REMOTE="SONY_RM_U304"
 
 . $(dirname $0)"/tools.sh"
 
-sendOnce KEY_CD
+sendOnce KEY_TUNER

@@ -1,3 +1,5 @@
+set -e
+
 if [ -z $REMOTE ]; then
   echo "Error: Variable 'REMOTE' is not set!"
   return 1;
