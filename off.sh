@@ -10,4 +10,4 @@ REMOTE="SONY_RM_U304"
 
 sendOnce KEY_CD
 sleep 1
-sendOnce KEY_POWER
+sendOnce KEY_POWER_AMP
