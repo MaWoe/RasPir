@@ -6,4 +6,4 @@ cd $(dirname $0)
 
 . tools.sh
 
-sendOnce KEY_VOLUMEDOWN
+sendOnce KEY_AMP_VOLUMEDOWN
