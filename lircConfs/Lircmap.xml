@@ -1,0 +1,27 @@
+<lircmap>
+  <remote device="SONY_RM_U304">
+    <up>KEY_2</up>
+    <left>KEY_4</left>
+    <right>KEY_6</right>
+    <down>KEY_8</down>
+    <select>KEY_5</select>
+
+    <key_1>KEY_1</key_1>
+    <key_3>KEY_3</key_3>
+    <key_7>KEY_7</key_7>
+    <key_9>KEY_9</key_9>
+    <!-- <key_0>KEY_0</key_0> -->
+
+    <back>KEY_EXIT</back>
+  </remote>
+  <remote device="DREAMBOX_CODE_100">
+    <select>KEY_OK</select>
+    <back>KEY_EXIT</back>
+    <play>KEY_GREEN</play>
+    <pause>KEY_YELLOW</pause>
+    <mymusic>KEY_AUDIO</mymusic>
+    <mypictures>KEY_VIDEO</mypictures>
+    
+  </remote>
+
+</lircmap>
