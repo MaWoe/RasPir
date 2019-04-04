@@ -15,12 +15,12 @@ fi
 
 VOLUME=$(($1*2))
 
-sendStart $RECEIVER KEY_VOLUMEDOWN
+sendStart $RECEIVER KEY_AMP_VOLUMEDOWN
 sleep 4
-sendStop $RECEIVER KEY_VOLUMEDOWN
+sendStop $RECEIVER KEY_AMP_VOLUMEDOWN
 
 while [ $(($VOLUME)) -gt 0 ]; do
-  sendOnce $RECEIVER KEY_VOLUMEUP
+  sendOnce $RECEIVER KEY_AMP_VOLUMEUP
   sleep 0.1
   VOLUME=$(($VOLUME-1))
 done
