@@ -2,4 +2,4 @@
 
 . $(dirname $0)/tools.sh
 
-sendOnce $RECEIVER KEY_VOLUMEDOWN
+sendOnce $RECEIVER KEY_AMP_VOLUMEDOWN
