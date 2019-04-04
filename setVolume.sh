@@ -1,8 +1,6 @@
 #!/bin/bash
 
-REMOTE="SONY_RM_U304"
-
-. tools.sh
+. $(dirname $0)/tools.sh
 
 usage () {
   echo
@@ -15,14 +13,14 @@ if [ -z $1 ]; then
   usage;
 fi
 
-VOLUME=$1
+VOLUME=$(($1*2))
 
-sendStart KEY_VOLUMEDOWN
+sendStart $RECEIVER KEY_VOLUMEDOWN
 sleep 4
-sendStop KEY_VOLUMEDOWN
+sendStop $RECEIVER KEY_VOLUMEDOWN
 
-while [ $VOLUME -gt 0 ]; do
-  sendOnce KEY_VOLUMEUP
+while [ $(($VOLUME)) -gt 0 ]; do
+  sendOnce $RECEIVER KEY_VOLUMEUP
   sleep 0.1
   VOLUME=$(($VOLUME-1))
 done
