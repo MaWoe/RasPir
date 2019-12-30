@@ -1,6 +1,7 @@
 set -e
 
 RECEIVER="DENON_RC-1225"
+TV="LG_TV"
 
 sendOnce () {
   irsend SEND_ONCE $1 $2
